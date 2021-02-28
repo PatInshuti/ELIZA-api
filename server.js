@@ -7,6 +7,10 @@ const port = 3000
  
 var eliza = new Eliza(); 
 
+app.get("/",(req, res) => {
+    res.send("welcome to the API")
+})
+
 app.get('/:prompt', (req, res) => {
     
     const prompt = req.params.prompt;
