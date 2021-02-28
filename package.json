@@ -1,0 +1,16 @@
+{
+  "name": "eliza-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Patrick Inshuti Makuba",
+  "license": "ISC",
+  "dependencies": {
+    "eliza-as-promised": "0.0.2",
+    "express": "^4.17.1",
+    "nodemon": "^2.0.7"
+  }
+}
