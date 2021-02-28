@@ -31,6 +31,6 @@ app.get('/:prompt', (req, res) => {
 
 })
 
-app.listen(port, () => {
+app.listen(process.env.PORT||port, () => {
     console.log(`ELIZA Server listening on ${port}`)
 })
