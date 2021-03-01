@@ -8,7 +8,9 @@ const port = 3000
 var eliza = new Eliza(); 
 
 app.get("/",(req, res) => {
-    res.send("welcome to the API")
+    res.send(
+        "welcome to the ELIZA API\n. The API has one route */any_prompt* "
+    )
 })
 
 app.get('/:prompt', (req, res) => {
@@ -26,9 +28,6 @@ app.get('/:prompt', (req, res) => {
             res.json({"response":response.final})
         }
     });
-
-    console.log(eliza.getResponse())
-
 })
 
 app.listen(process.env.PORT||port, () => {
